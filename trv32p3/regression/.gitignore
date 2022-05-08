@@ -1,0 +1,7 @@
+*.log
+summary
+*/Native/
+*/Release/
+*/test.gcc
+*/.message
+*/test.Release.trv32p3_ca_dbg.diff

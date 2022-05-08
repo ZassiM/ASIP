@@ -1,0 +1,18 @@
+# -- File : make.all
+# -- Contents : driver for parallel regression tests.
+# -- Copyright (c) 2014-2019 Synopsys Inc.
+
+MFILE ?= .message
+
+SUBDIRS = $(wildcard [A-Z][0-9][0-9]_*)
+.PHONY: $(SUBDIRS) $(SUBDIRS:=/)  force
+
+all: $(SUBDIRS)
+
+$(SUBDIRS) $(SUBDIRS:=/) : force
+	@ echo "start $@ $(MODE)" ; \
+	  $(MAKE) -C $@ -f ../Makefile.test $(MODE) --no-print-directory &> $@/$(MFILE) ; exitcode=$$? ; \
+	  echo "$$(echo 'finished $@ $(MODE)' ; cat $@/$(MFILE))" ; \
+	  exit $$exitcode
+
+force: ;

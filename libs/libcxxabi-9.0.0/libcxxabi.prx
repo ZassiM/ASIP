@@ -1,0 +1,42 @@
+<project name="Project">
+    <!-- C++ABI -->
+    <file type="c" name="cxa_aux_runtime.cpp" path="src"/>
+    <file type="c" name="cxa_default_handlers.cpp" path="src"/>
+    <file type="c" name="cxa_demangle.cpp" path="src">
+        <option id="llvm.mllvm" value="--chess-disable-aainfo" inherit="1"/>
+    </file>
+    <file type="c" name="cxa_exception_storage.cpp" path="src"/>
+    <file type="c" name="cxa_guard.cpp" path="src"/>
+    <file type="c" name="cxa_handlers.cpp" path="src"/>
+    <file type="c" name="cxa_unexpected.cpp" path="src"/>
+    <file type="c" name="cxa_vector.cpp" path="src"/>
+    <file type="c" name="cxa_virtual.cpp" path="src"/>
+    <!-- C++ STL -->
+    <file type="c" name="stdlib_exception.cpp" path="src"/>
+    <file type="c" name="stdlib_stdexcept.cpp" path="src"/>
+    <file type="c" name="stdlib_typeinfo.cpp" path="src"/>
+    <!-- internal -->
+    <file type="c" name="abort_message.cpp" path="src"/>
+    <file type="c" name="fallback_malloc.cpp" path="src"/>
+    <file type="c" name="private_typeinfo.cpp" path="src"/>
+    <!-- if LIBCXXABI_ENABLE_NEW_DELETE_DEFINITIONS
+    <file type="c" name="stdlib_new_delete.cpp" path="src"/>
+         endif -->
+    <!-- if LIBCXXABI_ENABLE_EXCEPTIONS
+    <file type="c" name="cxa_exception.cpp" path="src"/>
+    <file type="c" name="cxa_personality.cpp" path="src"/>
+         else -->
+    <file type="c" name="cxa_noexception.cpp" path="src"/>
+    <!-- endif -->
+    <!-- if LIBCXXABI_ENABLE_THREADS
+    <file type="c" name="cxa_thread_atexit.cpp" path="src"/>
+         endif -->
+    <!--
+    <option id="cpp.include" value="include ../libcxx-9.0.0/include ../newlib/include" inherit="0"/>
+    -->
+    <option id="cpp.define" value="_LIBCXXABI_BUILDING_LIBRARY _LIBCPP_BUILD_STATIC _LIBCXXABI_HAS_NO_THREADS _LIBCXXABI_NO_EXCEPTIONS _LIBCPP_DISABLE_EXTERN_TEMPLATE _LIBCPP_ENABLE_CXX17_REMOVED_UNEXPECTED_FUNCTIONS NDEBUG" inherit="1"/>
+    <option id="cpp.define" value="_LIBCXXABI_BUILDING_LIBRARY _LIBCPP_BUILD_STATIC _LIBCXXABI_HAS_NO_THREADS _LIBCXXABI_NO_EXCEPTIONS _LIBCPP_DISABLE_EXTERN_TEMPLATE _LIBCPP_ENABLE_CXX17_REMOVED_UNEXPECTED_FUNCTIONS _DEBUG" cfg="Debug" inherit="1"/>
+    <option id="llvm.clang" value="on"/>
+    <option id="llvm.lang" value="ext"/>
+    <option id="llvm.xargs" value="-std=c++14 -Werror=return-type -Wall -Wchar-subscripts -Wconversion -Wmismatched-tags -Wmissing-braces -Wnewline-eof -Wunused-function -Wshadow -Wshorten-64-to-32 -Wsign-compare -Wsign-conversion -Wstrict-aliasing=2 -Wstrict-overflow=4 -Wunused-parameter -Wunused-variable -Wwrite-strings -Wundef -Wno-error -fstrict-aliasing -fno-exceptions" inherit="1"/>
+</project>

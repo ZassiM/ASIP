@@ -1,0 +1,166 @@
+<project name="Project">
+    <file type="c" name="absvdi2.c" path="."/>
+    <file type="c" name="absvsi2.c" path="."/>
+    <file type="c" name="absvti2.c" path="."/>
+    <file type="c" name="adddf3.c" path="."/>
+    <file type="c" name="addsf3.c" path="."/>
+    <file type="c" name="addtf3.c" path="."/>
+    <file type="c" name="addvdi3.c" path="."/>
+    <file type="c" name="addvsi3.c" path="."/>
+    <file type="c" name="addvti3.c" path="."/>
+    <!-- disabled, irrelevant
+    <file type="c" name="apple_versioning.c" path="."/>
+    -->
+    <file type="c" name="ashldi3.c" path="."/>
+    <file type="c" name="ashlti3.c" path="."/>
+    <file type="c" name="ashrdi3.c" path="."/>
+    <file type="c" name="ashrti3.c" path="."/>
+    <!-- disabled, irrelevant
+    <file type="c" name="clear_cache.c" path="."/>
+    -->
+    <file type="c" name="bswapdi2.c" path="."/>
+    <file type="c" name="bswapsi2.c" path="."/>
+    <file type="c" name="clzdi2.c" path="."/>
+    <file type="c" name="clzsi2.c" path="."/>
+    <file type="c" name="clzti2.c" path="."/>
+    <file type="c" name="cmpdi2.c" path="."/>
+    <file type="c" name="cmpti2.c" path="."/>
+    <file type="c" name="comparedf2.c" path="."/>
+    <file type="c" name="comparesf2.c" path="."/>
+    <file type="c" name="ctzdi2.c" path="."/>
+    <file type="c" name="ctzsi2.c" path="."/>
+    <file type="c" name="ctzti2.c" path="."/>
+    <file type="c" name="divdc3.c" path="."/>
+    <file type="c" name="divdf3.c" path="."/>
+    <file type="c" name="divdi3.c" path="."/>
+    <file type="c" name="divmoddi4.c" path="."/>
+    <file type="c" name="divmodsi4.c" path="."/>
+    <file type="c" name="divsc3.c" path="."/>
+    <file type="c" name="divsf3.c" path="."/>
+    <file type="c" name="divsi3.c" path="."/>
+    <file type="c" name="divtc3.c" path="."/>
+    <file type="c" name="divti3.c" path="."/>
+    <file type="c" name="divtf3.c" path="."/>
+    <!-- disabled, only x86 variants
+    <file type="c" name="divxc3.c" path="."/>
+    -->
+    <file type="c" name="extendsfdf2.c" path="."/>
+    <file type="c" name="extendhfsf2.c" path="."/>
+    <file type="c" name="ffsdi2.c" path="."/>
+    <file type="c" name="ffssi2.c" path="."/>
+    <file type="c" name="ffsti2.c" path="."/>
+    <file type="c" name="fixdfdi.c" path="."/>
+    <file type="c" name="fixdfsi.c" path="."/>
+    <file type="c" name="fixdfti.c" path="."/>
+    <file type="c" name="fixsfdi.c" path="."/>
+    <file type="c" name="fixsfsi.c" path="."/>
+    <file type="c" name="fixsfti.c" path="."/>
+    <file type="c" name="fixunsdfdi.c" path="."/>
+    <file type="c" name="fixunsdfsi.c" path="."/>
+    <file type="c" name="fixunsdfti.c" path="."/>
+    <file type="c" name="fixunssfdi.c" path="."/>
+    <file type="c" name="fixunssfsi.c" path="."/>
+    <file type="c" name="fixunssfti.c" path="."/>
+    <!-- disabled, only x86 variants
+    <file type="c" name="fixunsxfdi.c" path="."/>
+    <file type="c" name="fixunsxfsi.c" path="."/>
+    <file type="c" name="fixunsxfti.c" path="."/>
+    <file type="c" name="fixxfdi.c" path="."/>
+    <file type="c" name="fixxfti.c" path="."/>
+    -->
+    <file type="c" name="floatdidf.c" path="."/>
+    <file type="c" name="floatdisf.c" path="."/>
+    <!-- disabled, only x86 variants
+    <file type="c" name="floatdixf.c" path="."/>
+    -->
+    <file type="c" name="floatsidf.c" path="."/>
+    <file type="c" name="floatsisf.c" path="."/>
+    <file type="c" name="floattidf.c" path="."/>
+    <file type="c" name="floattisf.c" path="."/>
+    <!-- disabled, only x86 variants
+    <file type="c" name="floattixf.c" path="."/>
+    -->
+    <file type="c" name="floatundidf.c" path="."/>
+    <file type="c" name="floatundisf.c" path="."/>
+    <!-- disabled, only x86 variants
+    <file type="c" name="floatundixf.c" path="."/>
+    -->
+    <file type="c" name="floatunsidf.c" path="."/>
+    <file type="c" name="floatunsisf.c" path="."/>
+    <file type="c" name="floatuntidf.c" path="."/>
+    <file type="c" name="floatuntisf.c" path="."/>
+    <!-- disabled, only x86 variants
+    <file type="c" name="floatuntixf.c" path="."/>
+    -->
+    <file type="c" name="int_util.c" path="."/>
+    <file type="c" name="lshrdi3.c" path="."/>
+    <file type="c" name="lshrti3.c" path="."/>
+    <file type="c" name="moddi3.c" path="."/>
+    <file type="c" name="modsi3.c" path="."/>
+    <file type="c" name="modti3.c" path="."/>
+    <file type="c" name="muldc3.c" path="."/>
+    <file type="c" name="muldf3.c" path="."/>
+    <file type="c" name="muldi3.c" path="."/>
+    <file type="c" name="mulodi4.c" path="."/>
+    <file type="c" name="mulosi4.c" path="."/>
+    <file type="c" name="muloti4.c" path="."/>
+    <file type="c" name="mulsc3.c" path="."/>
+    <file type="c" name="mulsf3.c" path="."/>
+    <file type="c" name="multi3.c" path="."/>
+    <file type="c" name="multf3.c" path="."/>
+    <file type="c" name="mulvdi3.c" path="."/>
+    <file type="c" name="mulvsi3.c" path="."/>
+    <file type="c" name="mulvti3.c" path="."/>
+    <file type="c" name="mulxc3.c" path="."/>
+    <file type="c" name="negdf2.c" path="."/>
+    <file type="c" name="negdi2.c" path="."/>
+    <file type="c" name="negsf2.c" path="."/>
+    <file type="c" name="negti2.c" path="."/>
+    <file type="c" name="negvdi2.c" path="."/>
+    <file type="c" name="negvsi2.c" path="."/>
+    <file type="c" name="negvti2.c" path="."/>
+    <!-- disabled, irrelevant
+    <file type="c" name="os_version_check.c" path="."/>
+    -->
+    <file type="c" name="paritydi2.c" path="."/>
+    <file type="c" name="paritysi2.c" path="."/>
+    <file type="c" name="parityti2.c" path="."/>
+    <file type="c" name="popcountdi2.c" path="."/>
+    <file type="c" name="popcountsi2.c" path="."/>
+    <file type="c" name="popcountti2.c" path="."/>
+    <file type="c" name="powidf2.c" path="."/>
+    <file type="c" name="powisf2.c" path="."/>
+    <file type="c" name="powitf2.c" path="."/>
+    <!-- disabled, only x86 variants
+    <file type="c" name="powixf2.c" path="."/>
+    -->
+    <file type="c" name="subdf3.c" path="."/>
+    <file type="c" name="subsf3.c" path="."/>
+    <file type="c" name="subvdi3.c" path="."/>
+    <file type="c" name="subvsi3.c" path="."/>
+    <file type="c" name="subvti3.c" path="."/>
+    <file type="c" name="subtf3.c" path="."/>
+    <!-- disabled, irrelevant
+    <file type="c" name="trampoline_setup.c" path="."/>
+    -->
+    <file type="c" name="truncdfhf2.c" path="."/>
+    <file type="c" name="truncdfsf2.c" path="."/>
+    <file type="c" name="truncsfhf2.c" path="."/>
+    <file type="c" name="ucmpdi2.c" path="."/>
+    <file type="c" name="ucmpti2.c" path="."/>
+    <file type="c" name="udivdi3.c" path="."/>
+    <file type="c" name="udivmoddi4.c" path="."/>
+    <file type="c" name="udivmodsi4.c" path="."/>
+    <file type="c" name="udivmodti4.c" path="."/>
+    <file type="c" name="udivsi3.c" path="."/>
+    <file type="c" name="udivti3.c" path="."/>
+    <file type="c" name="umoddi3.c" path="."/>
+    <file type="c" name="umodsi3.c" path="."/>
+    <file type="c" name="umodti3.c" path="."/>
+    <!-- disabled, irrelevant
+    <file type="c" name="gcc_personality_v0.c" path="."/>
+    -->
+    <file type="c" name="lower_atomic.c" path="."/>
+    <option id="llvm.clang" value="on"/>
+    <option id="llvm.lang" value="ext"/>
+</project>

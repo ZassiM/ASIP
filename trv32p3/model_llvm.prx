@@ -1,0 +1,10 @@
+<batch name="Batch project" processor="trv32p3" lib="lib">
+    <prj kind="project" name="libtrv32p3" path="lib" configuration="Release_LLVM"/>
+    <prj kind="project" name="compiler_rt.prx" path="lib/compiler-rt" configuration="Release_LLVM"/>
+    <prj kind="project" name="libcxx-lite.prx" path="lib/libcxx-lite" configuration="Release_LLVM"/>
+    <prj kind="project" name="libc" path="lib/runtime" configuration="Release_LLVM"/>
+    <prj kind="project" name="libm" path="lib/runtime" configuration="Release_LLVM"/>
+    <prj kind="simulator" name="trv32p3_ca_dbg" path="iss"/>
+    <prj kind="hdlgenerator" name="trv32p3_vlog" path="hdl"/>
+    <prj kind="project" name="libnative.prx" path="lib" configuration="Native"/>
+</batch>

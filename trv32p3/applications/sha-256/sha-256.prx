@@ -1,0 +1,14 @@
+<project name="Project" processor="trv32p3" lib="../../lib">
+    <file type="c" name="sha-256.c" path=""/>
+    <issinit cfg="default">fileinput_range add DMb 1000 1171 -field -file sha-256-input.dat -position 0 -type {} -radix hexadecimal -filter {} -format integer -structured 0 -auto_load 1 -bin_nbr_bytes 1 -bin_lsb_first 0 -load_on_breakpoint 0 -breakpoint_addr 0
+fileinput_range add DMw 293 299 -field -file sha-256-input-lengths.dat -position 0 -type {} -radix hexadecimal -filter {} -format integer -structured 0 -auto_load 1 -bin_nbr_bytes 4 -bin_lsb_first 0 -load_on_breakpoint 0 -breakpoint_addr 0
+fileinput_range add DMw 300 363 -field -file sha-256-k.dat -position 0 -type {} -radix hexadecimal -filter {} -format integer -structured 0 -auto_load 1 -bin_nbr_bytes 4 -bin_lsb_first 0 -load_on_breakpoint 0 -breakpoint_addr 0
+fileinput_range add DMb 1456 1679 -field -file sha-256-expected-hashes.dat -position 0 -type {} -radix hexadecimal -filter {} -format integer -structured 0 -auto_load 1 -bin_nbr_bytes 1 -bin_lsb_first 0 -load_on_breakpoint 0 -breakpoint_addr 0</issinit>
+    <option id="backend.mist2.nops" value="on"/>
+    <option id="llvm.lang" value="c++"/>
+    <option id="llvm.mllvm" value="-inline-threshold=1000 -enable-newgvn -chess-loop-sms -chess-unroll-allow-partial-uncomputable-loop -chess-aainfo2chains-algo=3 -chess-enable-jump-tables=0" inherit="1" cfg="Release_LLVM"/>
+    <option id="llvm.optim" value="3"/>
+    <option id="llvm.xargs" value="-xc -O3 -mllvm -inline-threshold=1000 -mllvm -chess-unroll-allow-partial-uncomputable-loop -mllvm -chess-aainfo2chains-algo=3 -mllvm -enable-newgvn -mllvm -chess-enable-jump-tables=0 -mllvm -chess-loop-sms" inherit="1" cfg="Release_LLVM_tuned"/>
+    <option id="project.name" value="main"/>
+    <option id="project.type" value="exe"/>
+</project>

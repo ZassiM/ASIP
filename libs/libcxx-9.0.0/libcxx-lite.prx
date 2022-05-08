@@ -1,0 +1,62 @@
+<project name="Project">
+    <file type="c" name="algorithm.cpp" path="src"/>
+<!-- ifndef _LIBCPP_LITE
+    <file type="c" name="any.cpp" path="src"/>
+     endif -->
+    <file type="c" name="bind.cpp" path="src"/>
+    <file type="c" name="charconv.cpp" path="src"/>
+<!-- ifndef _LIBCPP_LITE
+    <file type="c" name="chrono.cpp" path="src"/>
+    <file type="c" name="condition_variable.cpp" path="src"/>
+    <file type="c" name="condition_variable_destructor.cpp" path="src"/>
+     endif -->
+    <file type="c" name="debug.cpp" path="src"/>
+    <file type="c" name="exception.cpp" path="src"/>
+    <file type="c" name="functional.cpp" path="src"/>
+<!-- ifndef _LIBCPP_LITE
+    <file type="c" name="future.cpp" path="src"/>
+     endif -->
+    <file type="c" name="hash.cpp" path="src"/>
+<!-- ifndef _LIBCPP_LITE
+    <file type="c" name="ios.cpp" path="src"/>
+    <file type="c" name="iostream.cpp" path="src"/>
+    <file type="c" name="locale.cpp" path="src"/>
+     endif -->
+    <file type="c" name="memory.cpp" path="src"/>
+<!-- ifndef _LIBCPP_LITE
+    <file type="c" name="mutex.cpp" path="src"/>
+    <file type="c" name="mutex_destructor.cpp" path="src"/>
+     endif -->
+    <file type="c" name="new.cpp" path="src"/>
+<!-- ifndef _LIBCPP_LITE
+    <file type="c" name="optional.cpp" path="src"/>
+    <file type="c" name="random.cpp" path="src"/>
+    <file type="c" name="regex.cpp" path="src"/>
+    <file type="c" name="shared_mutex.cpp" path="src"/>
+     endif -->
+    <file type="c" name="stdexcept.cpp" path="src"/>
+    <file type="c" name="string.cpp" path="src"/>
+<!-- ifndef _LIBCPP_LITE
+    <file type="c" name="strstream.cpp" path="src"/>
+     endif -->
+    <file type="c" name="system_error.cpp" path="src"/>
+<!-- ifndef _LIBCPP_LITE
+    <file type="c" name="thread.cpp" path="src"/>
+     endif -->
+    <file type="c" name="typeinfo.cpp" path="src"/>
+<!-- ifdef _LIBCPP_LITE -->
+    <file type="c" name="abort_message.cpp" path="../libcxxabi-9.0.0/src"/>
+    <file type="c" name="cxa_aux_runtime.cpp" path="../libcxxabi-9.0.0/src"/>
+    <file type="c" name="cxa_virtual.cpp" path="../libcxxabi-9.0.0/src"/>
+    <file type="c" name="private_typeinfo.cpp" path="../libcxxabi-9.0.0/src"/>
+<!-- endif -->
+    <file type="c" name="utility.cpp" path="src"/>
+    <file type="c" name="valarray.cpp" path="src"/>
+    <file type="c" name="variant.cpp" path="src"/>
+    <file type="c" name="vector.cpp" path="src"/>
+    <option id="cpp.define" value="_LIBCPP_BUILDING_LIBRARY _LIBCPP_NO_EXCEPTIONS _LIBCXXABI_NO_EXCEPTIONS _LIBCPP_BUILD_STATIC NDEBUG" inherit="1"/>
+    <option id="cpp.define" value="_LIBCPP_BUILDING_LIBRARY _LIBCPP_NO_EXCEPTIONS _LIBCXXABI_NO_EXCEPTIONS _LIBCPP_BUILD_STATIC _LIBCPP_DEBUG=0 _DEBUG" inherit="1" cfg="Debug"/>
+    <option id="llvm.clang" value="on"/>
+    <option id="llvm.lang" value="ext"/>
+    <option id="llvm.xargs" value="-std=c++14 -Wall -Wextra -W -Wwrite-strings -Wno-unused-parameter -Wno-long-long -Werror=return-type -Wextra-semi -Wno-user-defined-literals -Wno-covered-switch-default -Wno-error -fno-exceptions" inherit="1"/>
+</project>

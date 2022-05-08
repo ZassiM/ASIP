@@ -1,0 +1,59 @@
+/*
+-- Copyright (c) 2015-2019 Synopsys, Inc.  This Synopsys software and all
+-- associated documentation are proprietary to Synopsys, Inc. and may only be
+-- used pursuant to the terms and conditions of a written license agreement
+-- with Synopsys, Inc.  All other use, reproduction, modification, or
+-- distribution of the Synopsys software or the associated documentation is
+-- strictly prohibited.
+*/
+//===------------------------ apple_availability.h ------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+#ifndef _LIBCPP_SRC_INCLUDE_APPLE_AVAILABILITY_H
+#define _LIBCPP_SRC_INCLUDE_APPLE_AVAILABILITY_H
+
+#if defined(__APPLE__)
+
+#if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__)
+#if __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ >= 101300
+#define _LIBCPP_USE_UTIMENSAT
+#endif
+#elif defined(__ENVIRONMENT_IPHONE_OS_VERSION_MIN_REQUIRED__)
+#if __ENVIRONMENT_IPHONE_OS_VERSION_MIN_REQUIRED__ >= 110000
+#define _LIBCPP_USE_UTIMENSAT
+#endif
+#elif defined(__ENVIRONMENT_TV_OS_VERSION_MIN_REQUIRED__)
+#if __ENVIRONMENT_TV_OS_VERSION_MIN_REQUIRED__ >= 110000
+#define _LIBCPP_USE_UTIMENSAT
+#endif
+#elif defined(__ENVIRONMENT_WATCH_OS_VERSION_MIN_REQUIRED__)
+#if __ENVIRONMENT_WATCH_OS_VERSION_MIN_REQUIRED__ >= 40000
+#define _LIBCPP_USE_UTIMENSAT
+#endif
+#endif // __ENVIRONMENT_.*_VERSION_MIN_REQUIRED__
+
+#if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__)
+#if __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ >= 101200
+#define _LIBCPP_USE_CLOCK_GETTIME
+#endif
+#elif defined(__ENVIRONMENT_IPHONE_OS_VERSION_MIN_REQUIRED__)
+#if __ENVIRONMENT_IPHONE_OS_VERSION_MIN_REQUIRED__ >= 100000
+#define _LIBCPP_USE_CLOCK_GETTIME
+#endif
+#elif defined(__ENVIRONMENT_TV_OS_VERSION_MIN_REQUIRED__)
+#if __ENVIRONMENT_TV_OS_VERSION_MIN_REQUIRED__ >= 100000
+#define _LIBCPP_USE_CLOCK_GETTIME
+#endif
+#elif defined(__ENVIRONMENT_WATCH_OS_VERSION_MIN_REQUIRED__)
+#if __ENVIRONMENT_WATCH_OS_VERSION_MIN_REQUIRED__ >= 30000
+#define _LIBCPP_USE_CLOCK_GETTIME
+#endif
+#endif // __ENVIRONMENT_.*_VERSION_MIN_REQUIRED__
+
+#endif // __APPLE__
+
+#endif // _LIBCPP_SRC_INCLUDE_APPLE_AVAILABILITY_H

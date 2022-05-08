@@ -1,0 +1,12 @@
+isg/
+oneliners/
+Debug/
+Release/
+Release_LLVM/
+Native/
+Release_LLVM_full/
+compiler-rt/
+libcxx/
+libcxxabi/
+libgloss/
+newlib/
